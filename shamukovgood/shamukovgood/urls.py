@@ -20,5 +20,8 @@ from shamgood import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.homePageView.as_view(), name='home'),
+    path('', views.homePageView, name='home'),
+    path('about/', views.aboutPageView, name='about'),
+
+
 ]
